@@ -9,7 +9,7 @@ set('strictQuery', true);
 
 export const dbconnect = async () => {
   try {
-    connect('mongodb+srv://food:Food123@cluster0.gaqezki.mongodb.net/foodDB?retryWrites=true&w=majority&appName=Cluster0', {
+    connect('mongodb://localhost:27017/foodDB', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
